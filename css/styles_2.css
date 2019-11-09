@@ -1,0 +1,135 @@
+
+.subheader> div {
+    background-color: transparent;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: auto;
+
+    text-align: center;
+    line-height: 75px;
+    font-family: Lato, sans-serif;
+
+}
+
+
+
+.subheader{
+  display: block;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  position:absolute;
+  top: 25%;
+  right:20%;
+  width: 60%;
+
+  font-size:2vw;
+  font-family: Lato, sans-serif;
+  float:left;
+  margin:0px;
+  color:black;
+  text-align: center;
+  border-top: 0px;
+  border-bottom: 0px;
+
+  text-decoration: none;
+
+  text-shadow: 4px 4px 4px #000000;
+  font-size:3vw;
+  font-family: Lato, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 2px red;
+  text-shadow: 2px 2px 20px white;
+  text-align: center;
+
+
+
+}
+
+
+.container_left> div {
+    background-color: transparent;
+    width: auto;
+    margin: auto;
+
+    text-align: center;
+    line-height: 75px;
+
+    position: relative;
+    font-family: Lato, sans-serif;
+
+}
+
+
+
+.container_left{
+  display: block;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  position:absolute;
+  top: 85%;
+  left:10%;
+  width: auto;
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+
+  text-align: center;
+
+border-top: 0;
+margin: auto;
+z-index:+1;
+}
+
+
+.container_right {
+  display: block;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  position:absolute;
+  top: 99%;
+  right:10%;
+  width: 60%;
+  border-top: 0;
+text-align: left;
+font-size:1.5vw;
+font-family: Lato, sans-serif;
+color:aqua;
+}
+
+
+a{
+  text-decoration: none;
+  color:black;
+  text-shadow: 4px 4px 4px #000000;
+  font-size:3vw;
+  font-family: Lato, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 2px red;
+  text-shadow: 2px 2px 20px white;
+  text-align: center;
+}
+
+a:hover {
+  color: yellow;
+  background-color: transparent;
+
+}
+img{
+  width: auto ;
+ max-width: 100% ;
+ height: auto ;
+
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:59px;
+   background-color: transparent;
+   color: aqua;
+   text-align: center;
+}
+.copywrite{
+  font-size:1vw;
+  font-family: Lato, sans-serif;
+}
