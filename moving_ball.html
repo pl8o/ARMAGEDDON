@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300vw" height="120vw" style="border:1px solid black;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+var canvas;
+var ctx;
+var x = 300;
+var y = 120;
+var dx = 4;
+var dy = 4;
+var WIDTH = 300;
+var HEIGHT = 120;
+
+function circle(x,y,r) {
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI*2, true);
+  ctx.fill();
+}
+
+function rect(x,y,w,h) {
+  ctx.beginPath();
+  ctx.rect(x,y,w,h);
+  ctx.closePath();
+  ctx.fill();
+}
+
+
+function clear() {
+  ctx.clearRect(0, 0, WIDTH, HEIGHT);
+}
+
+function init() {
+  canvas = document.getElementById("myCanvas");
+  ctx = canvas.getContext("2d");
+  return setInterval(draw, 10);
+}
+
+
+function draw() {
+  clear();
+  ctx.fillStyle = "black";
+  rect(0,0,WIDTH,HEIGHT);
+  ctx.fillStyle = "orange";
+  circle(x, y, 50);
+
+  if (x + dx > WIDTH || x + dx < 0)
+    dx = -dx;
+  if (y + dy > HEIGHT || y + dy < 0)
+    dy = -dy;
+
+  x += dx;
+  y += dy;
+
+
+}
+
+init();
+</script>
+
+</body>
+</html>
+<!--
+
+// counting
+
+
+// Loop 3 times
+document.write("<p>Loop 3 times</p>");
+
+var index = 1;
+while (index <= 3 ){
+document.write("The value of index is: ", index);
+document.write("<br />");
+index ++;
+}
+
+document.write("<br />");
+
+// Loop 5 times
+document.write("<p>Loop 5 times</p>");
+
+var index = 1;
+while (index <= 5 ){
+document.write("The value of index is: ", index);
+document.write("<br />");
+index ++;
+}
+
+document.write("<br />");
+
+// Count back from 10 to 1
+document.write("<p>Count back from 10 to 1</p>");
+
+var index = 10;
+while (index >= 1 ){
+document.write( index);
+document.write("<br />");
+index --;
+}
+
+document.write("<br />");
+
+// Count from 0 to 10 in increments of 2 using multiplication
+document.write("<p>Count from 0 to 10 in increments of 2 using multiplication</p>");
+
+var index=0;
+
+while (index<=5) //Output the values from 0 to 5
+{
+  document.write(index * 2+"<br>")
+  index++;
+}
+-->
