@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-color: blue;
+}
+
+/* Fixed top_nav, full height */
+.top_nav {
+  display: inline-block;
+  height: 15%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding-bottom: 5vw;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Style the sidenav links and the dropdown button */
+.top_nav a, .dropdown-btn {
+
+  text-decoration: none;
+  font-size: 4vw;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* On mouse-over */
+
+ .dropdown-btn:hover span{
+   color:white;
+}
+
+/* Style the sidenav links and the dropdown button */
+/* On mouse-over */
+/* Main content */
+/* Add an active class to the active dropdown button */
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: blue;
+  padding-left: 8px;
+  padding-top: 10vw;
+  width:100%;
+}
+
+/* Optional: Style the caret down icon */
+/* Some media queries for responsiveness */
+
+
+.bar1, .bar2, .bar3 {
+  width: 8%;
+  height:5%;
+  background-color: #818181;
+  margin: 1.4vw 1vw;
+
+  padding-bottom: .5vw;
+  margin-left: 89%;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="top_nav">
+
+  <button class="dropdown-btn" style=" margin-left: 2%; "><img src="images/dog9.png" alt="a_dog" style="width:6vw; height:8vw; position: fixed; top: 1vw;"><span style="position: fixed; top: 3vw;left:10vw;z-index:1; ">TIN DOG</span></button>
+
+  <button class="dropdown-btn" style="position: fixed; top: 2.5vw; right: 0;" >
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
+
+  <div class="dropdown-container">
+    <a href="#">Contact</a>
+    <a href="#">Pricing</a>
+    <a href="#">Download</a>
+
+  </div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html>
