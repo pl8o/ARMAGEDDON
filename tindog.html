@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 <style>
 body {
-  font-family: "Lato", sans-serif;
+font-family: 'Ubuntu', sans-serif;
   background-color: blue;
 }
 
@@ -35,13 +36,21 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   text-align: left;
   cursor: pointer;
   outline: none;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
+.top_nav a, .dropdown-btn :hover{
+  color:white;
+}
+
+
+
+
 
 /* On mouse-over */
 
- .dropdown-btn:hover span{
-   color:white;
+.dropdown-btn:hover{
+  color:white;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -73,19 +82,88 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 
+
+
+.button {
+  background-color: black; /* Green */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+    padding: .5vw 4vw;
+
+  cursor: pointer;
+  border-radius:9%;
+
+}
+
+
+.button1 {
+  background-color: black;
+  color: red;
+  border: 2px solid white;
+  Position:absolute;
+  left:35%;
+  top:38%;
+
+
+}
+.button1:hover{
+  background-color: grey;
+}
+
+
+.button2 {
+  background-color: black;
+  color: red;
+  border: 2px solid white;
+  Position:absolute;
+  left:45%;
+  top:38%;
+margin-left: 6vw;
+}
+.button2:hover{
+  background-color: grey;
+}
+.meet_dogs{
+  Position:absolute;
+  left:18%;
+  top:48%;
+ font-size: 2vw;
+ color:OldLace;
+
+
+}
+#demo{
+  text-decoration: none;
+  font-size: 4vw;
+  color: grey;
+}
+
+#demo:hover{
+ color:white;
+
+}
+
+</style>
+
+
+
+
 </style>
 </head>
 <body>
 
 <div class="top_nav">
 
-  <button class="dropdown-btn" style=" margin-left: 2%; "><img src="images/dog9.png" alt="a_dog" style="width:6vw; height:8vw; position: fixed; top: 1vw;"><span style="position: fixed; top: 3vw;left:10vw;z-index:1; ">TIN DOG</span></button>
+  <button class="dropdown-btn" style=" margin-left: 2%; "><img src="images/dog9.png" alt="a_dog" style="width:6vw; height:8vw; position: fixed; top: 1vw;"><span style="position: fixed; top: 3vw;left:10vw;z-index:1; ">THE TIN DOG</span></button>
 
   <button class="dropdown-btn" style="position: fixed; top: 2.5vw; right: 0;" >
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
   </button>
+
 
   <div class="dropdown-container">
     <a href="#">Contact</a>
@@ -94,6 +172,33 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
   </div>
 </div>
+
+<div>
+
+  <button class="button button1">download</button>
+  <button class="button button2">download</button>
+</div>
+<span class="meet_dogs"> <h1 id="demo">Meet new and interesting dogs nearby</h1> </span>
+
+<script>
+document.getElementById("demo").addEventListener("mouseover", mouseOver);
+document.getElementById("demo").addEventListener("mouseout", mouseOut);
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "white";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "grey";
+}
+</script>
+
+
+
+<div>
+  <img src="images/iphone6.png" alt="a_phone" style="width:20vw; height:38vw; position:absolute; top: 70%; margin-left: 39%;">
+</div>
+
 
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -112,6 +217,5 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
 </body>
 </html>
