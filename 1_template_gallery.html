@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles_2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Fairytale, Armageddon, Robots, Aliens, Tasty Food, Good Friends, The Moon, Mars, The Black Knight Satellite, Space Ships, Tropical Islands, Philanthropy, Time Travel, Plastic Pollution, Adventure, Fun">
+  <meta name="description" content="A Modern Fairytale about Armageddon, Robots, Aliens, Tasty Food, Good Friends, The Moon, Mars, The Black Knight Satellite, Space Ships, Tropical Islands, Philanthropy, Time Travel, Plastic Pollution, Adventure and Fun">
+  <meta name="author" content="Rory Williams">
+
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+<style>
+
+.parallax {
+  /* The image used */
+  background-color: black;
+
+  /* Set a specific height */
+  min-height: 7400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+div.box1{
+  width: 15vw;
+  height: 10vw;
+  background: transparent;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+
+}
+
+div.box1:hover {
+  width: 25vw;
+  height: 35vw;
+
+}
+
+div.box1{overflow:hidden;}
+
+div.box2{
+  width: 15vw;
+  height: 15vw;
+  background: transparent;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+
+}
+
+div.box2:hover {
+  width: 58vw;
+  height: 45vw;
+
+}
+
+div.box2{overflow:hidden;}
+
+div.box3{
+  width: 15vw;
+  height: 15vw;
+  background: transparent;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+
+div.box3:hover {
+  width: 58vw;
+  height: 65vw;
+
+}
+
+div.box3{overflow:hidden;}
+
+div.box4{
+  width: 25vw;
+  height: 25vw;
+  position:absolute;
+  left: 10vw;
+  top:99vw;
+  background: transparent;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+
+div.box4:hover {
+  width: 58vw;
+  height: 65vw;
+
+}
+
+div.box4{overflow:hidden;}
+
+
+
+
+
+.column{
+  margin-left:20vw;
+  margin-top: 30vw;
+  display: inline-block;
+
+
+}
+.image{
+width:30vw;
+height:30vw;
+
+}
+/*  Video in background   */
+
+/*  end of video in background  */
+.aqua{
+  background-color:aqua;
+}
+.azure{
+  background-color:azure;
+}
+.orange{
+  background-color:#ff9933;
+}
+
+.yellow{
+  background-color:#cc9900;
+}
+.red{
+  background-color:#ff3300;
+}
+.purple{
+  background-color:#9900ff;
+}
+.lime{
+  background-color:lime;
+}
+.fuchsia{
+  background-color:#0099ff;
+}
+
+.transparent{
+  font-size: 1.5vw;
+  color:aqua;
+  line-height: .1vw;
+  background-color:transparent;
+}
+
+/*  */
+
+
+.shadow {
+  text-decoration: none;
+  color:black;
+  text-shadow: 4px 4px 4px #000000;
+  font-size:10vw;
+  font-family: Lato, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 2px red;
+  text-shadow: 0 0 20px white;
+  text-align: center;
+}
+.shadow_small {
+  text-decoration: none;
+  color:black;
+  text-shadow: 4px 4px 4px #000000;
+  font-size:1.2vw;
+  font-family: Lato, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 2px white;
+  text-shadow: 0 0 20px white;
+  text-align: center;
+
+}
+
+.texty{
+  font-size: 1.5vw;
+  color:aqua;
+  background-color:transparent;
+  line-height: .1vw;
+}
+
+
+
+.header{
+  display: block;
+  flex-wrap: nowrap;
+
+  left:8%;
+  width: 80%;
+  padding: 10px;
+  position:absolute;
+  top:15%;
+  text-align: center;
+  color:black;
+  text-shadow: 4px 4px 4px #000000;
+  font-size:10vw;
+  font-family: Lato, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 2px red;
+  text-shadow: 2px 2px 20px white;
+
+}
+
+.header2{
+  display: block;
+  flex-wrap: nowrap;
+
+  left:8%;
+  width: 80%;
+  padding: 10px;
+  position:absolute;
+  top:35%;
+  text-align: center;
+  color:black;
+  text-shadow: 4px 4px 4px #000000;
+  font-size:10vw;
+  font-family: Lato, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 2px red;
+  text-shadow: 2px 2px 20px white;
+
+}
+
+
+
+
+
+.footer_2 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 5%;
+   height:18%;
+   background-color: transparent;
+   text-decoration: none;
+   text-align: center;
+
+}
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+#myBtn {
+  width: 60vw;
+  font-size: 8vw;
+  padding: 2vw;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+#myBtn:hover {
+  background: aqua;
+  color: black;
+
+}
+
+p, a {
+  font-size: 1.5vw;
+  font-family: Lato, sans-serif;
+  color:aqua;
+  background-color:transparent;
+  line-height: .1vw;
+
+}
+
+
+</style>
+<title> A GALLERY OF TEMPLATES</title>
+</head>
+
+<body class="parallax">
+
+
+  <div class="header">
+  <p class="shadow"><span style="font-size:10vw;">TEMPLATE </span></p>
+  </div>
+<div class="header2">
+  <p class="shadow"><span style="font-size:10vw;">GALLERY </span></p>
+</div>
+<!-- Body of expandable boxes    -->
+
+<div class="column">
+
+<table style="border:none;">
+
+<tr>
+  <td>
+  <div class="box1">
+    <img class="image" src="images/abomb.jpg" alt="an a-bomb" >
+  </div>
+  </td>
+  <td>
+    <div class="transparent"><h1>ARMAGEDDON</h1>
+    <p class="texty">'Hoover' your mouse over the image on the LHS to see the full picture.</p>
+
+    </div>
+  </td>
+
+</tr>
+
+<tr>
+
+  <td>
+  <div class="box1"><iframe src="tindog.html" scrolling="no" style="border:none; "></iframe>
+
+  </div>
+  </td>
+  <td>
+    <div class="transparent"><h1>TIN DOG</h1>
+    <p class="texty">Just a template of a responsive site which is evolving.</p>
+
+    </div>
+  </td>
+
+</tr>
+
+
+<tr>
+  <td>
+  <div class="box2">
+<video id="myVideo" width="100%" height="100%" controls>
+
+    <source src="koya_vid.mp4" type="video/mp4" > </video></div>
+
+
+  <script>
+  var vid = document.getElementById("myVideo");
+
+  function getVolume() {
+    alert(vid.volume);
+  }
+
+  function setHalfVolume() {
+    vid.volume = 0.2;
+  }
+
+  function setFullVolume() {
+    vid.volume = 1.0;
+  }
+  </script>
+
+
+
+  </td>
+  <td>
+    <div class="transparent"><h1>KOYAANISQATSI</h1>
+        <p class="texty">Excerpt from "Koyaanisqatsi" A Haunting Statement..
+    </div>
+  </td>
+</tr>
+
+<tr>
+
+  <td>
+  <div class="box3"><iframe src="matrix_1.html" scrolling="no" style="border:none; width:50vw; height:70vw;"></iframe></div>
+  </td>
+  <td>
+    <div class="transparent"><h1>THE MATRIX</h1>
+    <p class="texty">Not all my own code but spectacular.</p>
+    <p> To see the full page click <a href="matrix_1.html" target="_blank" >HERE</a></p>
+
+    </div>
+  </td>
+
+</tr>
+
+<tr>
+
+  <td>
+  <div class="box3"><iframe src="storm_chasers.html" scrolling="no" style="border:none; width:58vw; height:58vw;"></iframe></div>
+  </td>
+  <td>
+    <div class="transparent"><h1>STORM CHASERS</h1>
+    <p class="texty">I Love this TV Series. Lots of corny hi-fives and puffy-egos, but the storms are specky.</p>
+    <p> To see the full page click <a href="storm_chasers.html" target="_blank" >HERE</a></p>
+    </div>
+  </td>
+
+</tr>
+
+<tr>
+<td>
+<div class="box4"><iframe src="1_the_box.html" scrolling="no" style="border:none; width:58vw; height:58vw;"></iframe></div>
+</td>
+<td>
+  <span style="position:relative; left: 0; top:9vw;"><div class="transparent"><h1>THE BOX</h1>
+  <p class="texty">I like these boxy navigation links. They are simple and colorful. </p>
+  <p> To see the full page click <a href="1_the_box.html" target="_blank" >HERE</a></p>
+  </div</span>
+</td>
+
+</tr>
+
+
+
+
+
+
+
+</table>
+
+</div>
+
+
+
+
+
+<!--End of expandable boxes -->
+
+<!--start video  -->
+
+
+
+
+
+
+<!-- end video -->
+
+<div>
+  <footer class="footer">
+    <!--  <p class="copywrite">© 2019 Rory Williams</p>-->
+
+  </footer>
+</div>
+
+<br>
+<br>
+<br>
+<div class = "footer_2">
+<a href="index.html" target="_blank" alt="home" ><p class=""><span style="font-size:1.5vw;">Home</span></p></a>
+</div>
+<!--Video Javascript   -->
+
+
+
+<!-- end of video javascript   -->
+</body>
+</html>
